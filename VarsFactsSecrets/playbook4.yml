@@ -1,0 +1,7 @@
+- hosts: all
+  vars_files:
+    - ~/varsfile.yaml
+  tasks:
+  - name: user name and password from external var file
+    debug:
+      msg: "{{ username}}, {{ password }}"

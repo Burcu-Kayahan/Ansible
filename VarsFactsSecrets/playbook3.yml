@@ -1,0 +1,10 @@
+- hosts: all
+  tasks:
+    - name: Create new users
+      user:
+        name: '{{ item }}'
+        state: present
+
+      loop:
+        - mike
+        - sandra

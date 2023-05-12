@@ -1,0 +1,9 @@
+- name: start apache
+  hosts: all
+  become: true
+  tasks:
+    - name: stop apache 
+      service:
+        name: httpd
+        state: stopped
+        

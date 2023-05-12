@@ -1,0 +1,20 @@
+# the first one task 
+
+# echo "Hello Ansible" > testfile1
+# nano playbook2.yml
+
+- name: Copy for linux
+  hosts: webservers
+  tasks:
+   - name: Copy your file to the webservers
+     copy:
+       src: /etc/ansible
+       dest: /home/ec2-user/testfile1
+
+- name: Copy for ubuntu
+  hosts: ubuntuservers
+  tasks:
+   - name: Copy your file to the ubuntuservers
+     copy:
+       src: /etc/ansible
+       dest: /home/ubuntu/testfile1

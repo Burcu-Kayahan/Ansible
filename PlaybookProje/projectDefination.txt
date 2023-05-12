@@ -1,0 +1,5 @@
+degistirilecek Dosya: /var/www/html/index.html
+dosyanin icindeki userlardan birini kendi isminizle degistirip siteyi yayina alin ve bRowserdan kontrol edin(screenshot alin)
+daha sonra service i durdurun digEr arkadaslar da ayni islemi yaPabilsin
+mevcut index.html dosyasinin yedegi home/ec2-use dizininde mevcut,
+uyguLama yapmadan index.html i home dizinine kopyAlamak suretiyle yedegini alin ki hata olursa geri donusu olabilsin.

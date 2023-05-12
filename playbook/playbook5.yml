@@ -1,0 +1,16 @@
+- name: Remove apache from webservers
+  hosts: webservers
+  tasks: 
+    - name: remove apache 
+      yum:
+        name: httpd
+        state: absent # yum remove httpd
+
+- name: Remove apache from ubuntu
+  hosts: ubuntuservers
+  tasks:
+    - name: remove apache
+      apt:
+        name: apache2
+        state: absent
+        purge: yes
